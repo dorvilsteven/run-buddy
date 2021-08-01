@@ -67,12 +67,31 @@ footer a {
 section {
   padding: 60px;
 }
+/* homepage hero */
 .hero {
   background-image: url("../images/hero-bg.jpg");
   height: 600px;
   background-position: center;
   background-size: cover;
   position: relative;
+  margin: 20px;
+  background-color: white;
+  color: blue;
+}
+.page-title {
+  color: #fce138;
+  display: inline-block;
+  border-bottom: 4px solid #fce138;
+  padding: 0 80px 15px 80px;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: italic;
+}
+
+/* secondary page hero */
+.hero-secondary {
+  background-color: black;
+  color: red;
 }
 .hero-form {
   background-color: #fce138;
