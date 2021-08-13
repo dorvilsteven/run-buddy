@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 2px solid #000; */
 }
 body {
   color: #39a6b2;
@@ -10,17 +11,26 @@ body {
 
 /* header styles */
 header {
+  background-image: url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px 35px;
   background-color: #39a6b2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -44,6 +54,16 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* form styles */
+.form-input,
+.hero-form button,
+.contact-form input,
+.contact-info textarea,
+.contact-form button {
+  border-radius: 10px;
 }
 
 /* footer styles  */
@@ -95,14 +115,17 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form {
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   border: solid 3px #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 .hero-form h3 {
   font-size: 24px;
@@ -328,6 +351,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
   header h1 {
     width: 100%;
